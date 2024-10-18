@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #4891ff;
+  --text-color: #111;
+  --bg-color: #fff;
+  --footer-color: #bbb6b6;
+}
+
+.darkmode {
+  --primary-color: #4891ff;
+  --text-color: #fff;
+  --bg-color: #201f1f;
+  --footer-color: #111;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* shortcut icon */
+.link .shortcut-icon {
+  color: var(--primary-color);
+}
+/* navbar */
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar ul li {
+  padding: 10px 20px;
+  display: block;
+  font-weight: 600;
+}
+
+.navbar ul li a:hover {
+  color: var(--primary-color);
+}
+
+.navbar ul li a i {
+  margin-left: 5px;
+}
+
+#theme-switch {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+#theme-switch i {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+#theme-switch i:last-child {
+  display: none;
+}
+
+.darkmode #theme-switch i:first-child {
+  display: none;
+}
+
+.darkmode #theme-switch i:last-child {
+  display: block;
+}
+/* hero */
+.hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+  gap: 12px;
+}
+
+.hero .hero-content :first-child {
+  margin-bottom: 15px;
+}
+
+/* education */
+.education-header {
+  font-weight: bold;
+  margin: 40px 0 50px 0;
+}
+.education .education-image {
+  width: 250px;
+  margin: 0px 30px;
+  background-color: #fff;
+  padding: 10px 10px;
+}
+
+.education .education-card {
+  display: flex;
+}
+.education .education-card :last-child {
+  margin-top: 30px;
+}
+.education .education-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* work-voluntary */
+.work-voluntary .work-voluntary-header {
+  font-weight: bold;
+  margin: 80px 0 60px;
+}
+
+.work-voluntary .work-voluntary-image {
+  width: 300px;
+  height: 150px;
+  display: block;
+  margin: 0px 30px;
+  background-color: #fff;
+  padding: 10px 10px;
+}
+
+.work-voluntary .work-voluntary-card {
+  display: flex;
+}
+
+.work-voluntary .work-voluntary-card :last-child {
+  margin-top: 30px;
+}
+
+.work-voluntary .work-voluntary-grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 100px;
+}
+
+.work-voluntary .work-voluntary-card-body {
+  margin: 0 40px;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+/* skills-interest */
+.skills-interest ul {
+  margin-top: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skills-interest .point-title {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* footer */
+.footer {
+  padding: 0px 0 10px 30px;
+}
+
+.footer ul li {
+  line-height: 2.5;
+}
+
+.footer i {
+  font-size: 2rem;
+  margin-left: 5px;
+  color: #0077b5;
+}
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background-color: var(--footer-color);
+}
+/*utility classes */
+.container {
+  margin: 20px 60px 20px 0;
+  padding: 0 15px;
+}
+
+.container-sm {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* background */
+.bg-dark {
+  color: #fff;
+  background: var(--dark-color);
+}
+
+.bg-light {
+  color: #333;
+  background: var(--light-color);
+}
+
+.bg-black {
+  background-color: #111;
+  color: #fff;
+}
+
+/* text size */
+.text-xl {
+  font-size: 2.2rem;
+  line-height: 1.4;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.text-md {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.text-center {
+  text-align: center;
+}
