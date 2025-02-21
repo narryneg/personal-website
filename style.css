@@ -179,10 +179,6 @@ img {
 }
 
 /* footer */
-.footer {
-  padding: 0px 0 10px 30px;
-}
-
 .footer ul li {
   line-height: 2.5;
 }
@@ -193,8 +189,9 @@ img {
   color: #0077b5;
 }
 .footer {
+  padding: 0px 0 10px 30px;
   width: 100%;
-  margin-top: auto;
+  margin-top: 30px;
   background-color: var(--footer-color);
 }
 /*utility classes */
